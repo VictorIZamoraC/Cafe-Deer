@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap -->
+     <link href="/VentaEnSucursalApp/static/VentaEnSucursalApp/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     
+ 
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+ 
+     <!-- Styles -->
+     <link href="/VentaEnSucursalApp/static/VentaEnSucursalApp/css/gestion.css" rel="stylesheet">
+
+    <title>Solicitar Pago</title>
+</head>
+<body>
+    
+    <h1 class="site-heading text-center text-white d-none d-lg-block">  
+        <span class="site-heading-lower">CAFE DEER</span>
+    </h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="ofrecerProductos.html">CAFE DEER</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="ofrecerProductos.html">Producto</a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="solicitarPago.html">Pago</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="entregarPedido.html">Pedido</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="hacerCorteDeCaja.html">Corte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Content -->
+    <div class="card container-measurements">
+        <div class="card-header inside-heading text-center">
+            <p class="section-heading">Producto(s) agregado(s)</p>
+        </div>
+        <div class="card-body">
+            
+            <div class="col-md-5 col-lg-11 order-md-last cart">                
+                <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <img src="/VentaEnSucursalApp/static/VentaEnSucursalApp/img/cafe.svg" class="cart-image cart-items" alt="">
+                    <p class="cart-items cart-product-name" style="margin-left: 20px;">Americano</p>
+                    <div class="d-flex align-items-center ">
+                        <p class="text-muted cart-items-description-brief p-2">Tamaño: Mediano</p>
+                        <p class="text-muted cart-items-description-brief p-2">Cantidad: 2</p>        
+                    </div>
+                    <p class="cart-items cart-items-value" style="margin-right: 40px;">$20.00 MXN</p>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <img src="/VentaEnSucursalApp/static/VentaEnSucursalApp/img/cafe.svg" class="cart-image cart-items" alt="">
+                    <p class="cart-items cart-product-name" style="margin-left: 20px;">Kfrezze</p>
+                    <div class="d-flex align-items-center ">
+                        <p class="text-muted cart-items-description-brief p-2">Tamaño: Chico</p>
+                        <p class="text-muted cart-items-description-brief p-2">Cantidad: 1</p>        
+                    </div>
+                    <p class="cart-items cart-items-value" style="margin-right: 40px;">$40.00 MXN</p>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-sm">
+                    <img src="/VentaEnSucursalApp/static/VentaEnSucursalApp/img/cafe.svg" class="cart-image cart-items" alt="">
+                    <p class="cart-items cart-product-name" style="margin-left: 20px;">Rockaccino</p>
+                    <div class="d-flex align-items-center ">
+                        <p class="text-muted cart-items-description-brief p-2">Tamaño: Grande</p>
+                        <p class="text-muted cart-items-description-brief p-2">Cantidad: 1</p>        
+                    </div>
+                    <p class="cart-items cart-items-value" style="margin-right: 40px;">$50.00 MXN</p>
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed accordion-button-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Tarjeta
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body" style="padding-top: 50px; padding-bottom: 50px;">
+                        
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Número de tarjeta</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <div class="invalid-feedback">
+                                    El número de la tarjeta es obligatorio
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Nombre del títular</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                                <small class="text-muted">Nombre completo que aparece en la tarjeta</small>
+                                <div class="invalid-feedback">
+                                    El nombre del títular es obligatorio
+                                </div>
+                            </div>
+            
+                            <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Fecha de vencimiento</label>
+                            <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                            <small class="text-muted">MM / AA</small>
+                            <div class="invalid-feedback">
+                                La fecha de vencimiento es obligatoria
+                            </div>
+                            </div>
+            
+                            <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">Código de seguridad</label>
+                            <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                            <div class="invalid-feedback">
+                                El código de seguridad es obligatorio
+                            </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed accordion-button-text" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Efectivo
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body" style="padding-top: 50px; padding-bottom: 50px;">
+                        
+                        <div class="row gy-3">
+                            <div class="col-md-3">
+                                <label for="cc-name" class="form-label">Cantidad de efectivo</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                                <div class="invalid-feedback">  
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="payment-details">
+                            <div class="d-flex justify-content-center">
+                                <p class="items-payment cart-product-name cart-items">Cambio: </p>
+                                <p class="items-payment cart-items-value cart-items">$00.00 MXN</p>    
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>                
+                
+            </div>
+
+
+
+            <div class="payment-details">
+                <div class="d-flex justify-content-center">
+                    <p class="items-payment cart-product-name cart-items">Subtotal: </p>
+                    <p class="items-payment cart-items-value cart-items">$00.00 MXN</p>    
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="items-payment cart-product-name cart-items">IVA: </p>
+                    <p class="items-payment cart-items-value cart-items">$00.00 MXN</p>    
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="items-payment cart-product-name cart-items">Total: </p>
+                    <p class="items-payment cart-items-value cart-items">$00.00 MXN</p>    
+                </div>
+            </div>
+            <button class="btn btn-lg container-button-submit" type="submit">Pagar</button>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center py-2">
+        <div class="container">
+          <p class="m-1 mbt1">&copy; CAFE DEER 2022</p>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    
+    <!-- Bootstrap -->
+    <script src="/VentaEnSucursalApp/static/VentaEnSucursalApp/vendor/jquery/jquery.min.js"></script>
+    <script src="/VentaEnSucursalApp/static/VentaEnSucursalApp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
